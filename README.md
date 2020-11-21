@@ -13,3 +13,4 @@
 
 - [AHK_L Decompiler](AHK_L%20Decompiler)
 - [Hash-ish](Hash-ish)
+- [RegexHelper](RegexHelper)
