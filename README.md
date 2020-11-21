@@ -11,4 +11,5 @@
 
 ### 索引(index)
 
-- [AHK_L Decompiler](AHK_L%20Decompiler/readme.txt)
+- [AHK_L Decompiler](AHK_L%20Decompiler)
+- [Hash-ish](Hash-ish)
