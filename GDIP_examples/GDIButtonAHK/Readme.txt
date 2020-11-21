@@ -1,0 +1,1 @@
+These scripts require AHK_L and GDI+ Lib by Tic installed!
