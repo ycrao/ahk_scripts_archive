@@ -20,3 +20,8 @@
 - [GDIP](GDI_examples/readme.txt), `gdip.ahk` need compile with ANSI 32bit bin platform. 注意：该库请使用 `ANSI` 32 位 bin 平台 编译。
 - AHK 版 `GDIP` 官方示例：[gdip_official](GDIP_examples/gdip_official)
 - 另一个 `GDI` 示例：[GDI_HUD](GDIP_examples/GDI_HUD)
+
+
+### 参考(reference)
+
+- https://github.com/Drugoy/Autohotkey-scripts-.ahk
