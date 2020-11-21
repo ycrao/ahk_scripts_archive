@@ -25,4 +25,6 @@
 
 ### 参考(reference)
 
+- https://www.autohotkey.com/
 - https://github.com/Drugoy/Autohotkey-scripts-.ahk
+- https://www.autoahk.com/
