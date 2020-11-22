@@ -1,0 +1,4 @@
+CreateDIB
+------
+
+https://www.autohotkey.com/boards/viewtopic.php?t=3203
