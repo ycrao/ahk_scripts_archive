@@ -22,6 +22,7 @@
 - 另一个 `GDI` 示例：[GDI_HUD](GDIP_examples/GDI_HUD)
 - [GDIButtonAHK](GDIP_examples/GDIButtonAHK)
 - 另一款正则助手工具：[AHK RegEx Tester](AHK%20RegEx%20Tester)
+- 一种使用字符串创建位图并显示的类库：[CreateDIB](CreateDIB)
 
 
 ### 参考(reference)
