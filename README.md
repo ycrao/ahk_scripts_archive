@@ -13,7 +13,7 @@
 
 ### 索引(index)
 
-- 逆向反译器：[AHK_L Decompiler](AHK_L%20Decompiler)
+- 逆向/反编译器：[AHK_L Decompiler](AHK_L%20Decompiler)
 - 哈希小工具：[Hash-ish](Hash-ish)
 - 正则助手：[RegexHelper](RegexHelper)
 - 注册码保护器：[sw-copy-protection](swcp)
@@ -21,6 +21,7 @@
 - AHK 版 `GDIP` 官方示例：[gdip_official](GDIP_examples/gdip_official)
 - 另一个 `GDI` 示例：[GDI_HUD](GDIP_examples/GDI_HUD)
 - [GDIButtonAHK](GDIP_examples/GDIButtonAHK)
+- 另一款正则助手工具：[AHK RegEx Tester](AHK%20RegEx%20Tester)
 
 
 ### 参考(reference)
