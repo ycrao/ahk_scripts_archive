@@ -23,7 +23,7 @@
 - [GDIButtonAHK](GDIP_examples/GDIButtonAHK)
 - 另一款正则助手工具：[AHK RegEx Tester](AHK%20RegEx%20Tester)
 - 一种使用字符串创建位图并显示的类库：[CreateDIB](CreateDIB)
-- 基于 `bass.dll` 音乐播放器：[bass_player](base_player)
+- 基于 `bass.dll` 音乐播放器：[bass_player2](base_player2)
 
 
 ### 参考(reference)
