@@ -24,7 +24,7 @@
 - 另一款正则助手工具：[AHK RegEx Tester](AHK%20RegEx%20Tester)
 - 一种使用字符串创建位图并显示的类库：[CreateDIB](CreateDIB)
 - 基于 `bass.dll` 音乐播放器：[bass_player2](bass_player2)
-- 剪切板相关：[复制带格式(基于HTML)的文本](CliboardRichData/copyStyledCodeToClip.ahk) 复制图片到剪切板 - [基于GDIP（不支持GIF图）](CliboardRichData/copyImageToClipByGdip.ahk) , [基于WinClip](CliboardRichData/copyImageToClipByWinClip.ahk)
+- 剪切板相关：[复制带格式(基于HTML)的文本](ClipboardRichData/copyStyledCodeToClip.ahk) 复制图片到剪切板 - [基于GDIP（不支持GIF图）](ClipboardRichData/copyImageToClipByGdip.ahk) , [基于WinClip](ClipboardRichData/copyImageToClipByWinClip.ahk)
 
 
 ### 参考(reference)
