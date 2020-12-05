@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>bubble_sort.c</title>
+</head>
+<body style="background-color:#ffffff">
+<pre style="color:#000000; background-color:#ffffff; font-size:10pt; font-family:'Courier New',monospace;white-space: pre-wrap;"><span style="color:#2b91af">    1 </span><span style="color:#0000ff">#include &lt;stdio.h&gt;</span>
+<span style="color:#2b91af">    2 </span>
+<span style="color:#2b91af">    3 </span><span style="color:#0000ff">void</span> <span style="color:#000000">bubbleSort</span><span style="color:#000000">(</span><span style="color:#0000ff">int</span><span style="color:#000000">*</span> arr<span style="color:#000000">,</span> <span style="color:#0000ff">int</span> len<span style="color:#000000">)</span>
+<span style="color:#2b91af">    4 </span><span style="color:#000000">{</span>
+<span style="color:#2b91af">    5 </span>    <span style="color:#008000">// int len = sizeof(arr) / sizeof(arr[0]);</span>
+<span style="color:#2b91af">    6 </span>    <span style="color:#0000ff">int</span> i<span style="color:#000000">,</span> j<span style="color:#000000">,</span> buf<span style="color:#000000">;</span>
+<span style="color:#2b91af">    7 </span>    <span style="color:#0000ff">for</span> <span style="color:#000000">(</span>i <span style="color:#000000">=</span> <span style="color:#000000">0</span><span style="color:#000000">;</span> i <span style="color:#000000">&lt;</span> len<span style="color:#000000">-</span><span style="color:#000000">1</span><span style="color:#000000">; ++</span> i<span style="color:#000000">)</span>
+<span style="color:#2b91af">    8 </span>        <span style="color:#000000">{</span>
+<span style="color:#2b91af">    9 </span>            <span style="color:#0000ff">for</span> <span style="color:#000000">(</span>j <span style="color:#000000">=</span> <span style="color:#000000">0</span><span style="color:#000000">;</span> j <span style="color:#000000">&lt;</span> len<span style="color:#000000">-</span><span style="color:#000000">1</span><span style="color:#000000">-</span>i<span style="color:#000000">; ++</span> j<span style="color:#000000">)</span>
+<span style="color:#2b91af">   10 </span>                <span style="color:#000000">{</span>
+<span style="color:#2b91af">   11 </span>                    <span style="color:#0000ff">if</span> <span style="color:#000000">(</span>arr<span style="color:#000000">[</span>j<span style="color:#000000">] &gt;</span> arr<span style="color:#000000">[</span>j<span style="color:#000000">+</span><span style="color:#000000">1</span><span style="color:#000000">])</span>
+<span style="color:#2b91af">   12 </span>                        <span style="color:#000000">{</span>
+<span style="color:#2b91af">   13 </span>                            buf <span style="color:#000000">=</span> arr<span style="color:#000000">[</span>j<span style="color:#000000">+</span><span style="color:#000000">1</span><span style="color:#000000">];</span>
+<span style="color:#2b91af">   14 </span>                            arr<span style="color:#000000">[</span>j<span style="color:#000000">+</span><span style="color:#000000">1</span><span style="color:#000000">] =</span> arr<span style="color:#000000">[</span>j<span style="color:#000000">];</span>
+<span style="color:#2b91af">   15 </span>                            arr<span style="color:#000000">[</span>j<span style="color:#000000">] =</span> buf<span style="color:#000000">;</span>
+<span style="color:#2b91af">   16 </span>                        <span style="color:#000000">}</span>
+<span style="color:#2b91af">   17 </span>                <span style="color:#000000">}</span>
+<span style="color:#2b91af">   18 </span>        <span style="color:#000000">}</span>
+<span style="color:#2b91af">   19 </span><span style="color:#000000">}</span>
+<span style="color:#2b91af">   20 </span>
+<span style="color:#2b91af">   21 </span><span style="color:#0000ff">int</span> <span style="color:#000000">main</span><span style="color:#000000">()</span>
+<span style="color:#2b91af">   22 </span><span style="color:#000000">{</span>
+<span style="color:#2b91af">   23 </span>    <span style="color:#000000">printf</span><span style="color:#000000">(</span><span style="color:#a31515">&quot;original array: {3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48}</span><span style="color:#a31515">\n</span><span style="color:#a31515">&quot;</span><span style="color:#000000">);</span>
+<span style="color:#2b91af">   24 </span>    <span style="color:#0000ff">int</span> arr<span style="color:#000000">[</span><span style="color:#000000">15</span><span style="color:#000000">] = {</span><span style="color:#000000">3</span><span style="color:#000000">,</span> <span style="color:#000000">44</span><span style="color:#000000">,</span> <span style="color:#000000">38</span><span style="color:#000000">,</span> <span style="color:#000000">5</span><span style="color:#000000">,</span> <span style="color:#000000">47</span><span style="color:#000000">,</span> <span style="color:#000000">15</span><span style="color:#000000">,</span> <span style="color:#000000">36</span><span style="color:#000000">,</span> <span style="color:#000000">26</span><span style="color:#000000">,</span> <span style="color:#000000">27</span><span style="color:#000000">,</span> <span style="color:#000000">2</span><span style="color:#000000">,</span> <span style="color:#000000">46</span><span style="color:#000000">,</span> <span style="color:#000000">4</span><span style="color:#000000">,</span> <span style="color:#000000">19</span><span style="color:#000000">,</span> <span style="color:#000000">50</span><span style="color:#000000">,</span> <span style="color:#000000">48</span><span style="color:#000000">};</span>
+<span style="color:#2b91af">   25 </span>    <span style="color:#000000">bubbleSort</span><span style="color:#000000">(</span>arr<span style="color:#000000">,</span> <span style="color:#000000">15</span><span style="color:#000000">);</span>
+<span style="color:#2b91af">   26 </span>    <span style="color:#000000">printf</span><span style="color:#000000">(</span><span style="color:#a31515">&quot;after sorted: {&quot;</span><span style="color:#000000">);</span>
+<span style="color:#2b91af">   27 </span>    <span style="color:#0000ff">for</span> <span style="color:#000000">(</span><span style="color:#0000ff">int</span> i <span style="color:#000000">=</span> <span style="color:#000000">0</span><span style="color:#000000">;</span> i <span style="color:#000000">&lt;</span> <span style="color:#000000">15</span><span style="color:#000000">;</span> i <span style="color:#000000">++)</span>
+<span style="color:#2b91af">   28 </span>        <span style="color:#000000">{</span>
+<span style="color:#2b91af">   29 </span>            <span style="color:#0000ff">if</span> <span style="color:#000000">(</span>i <span style="color:#000000">==</span> <span style="color:#000000">14</span><span style="color:#000000">)</span>
+<span style="color:#2b91af">   30 </span>                <span style="color:#000000">{</span>
+<span style="color:#2b91af">   31 </span>                    <span style="color:#000000">printf</span><span style="color:#000000">(</span><span style="color:#a31515">&quot;</span><span style="color:#a31515">%d</span><span style="color:#a31515">}</span><span style="color:#a31515">\n</span><span style="color:#a31515">&quot;</span><span style="color:#000000">,</span> arr<span style="color:#000000">[</span>i<span style="color:#000000">]);</span>
+<span style="color:#2b91af">   32 </span>                <span style="color:#000000">}</span>
+<span style="color:#2b91af">   33 </span>            <span style="color:#0000ff">else</span>
+<span style="color:#2b91af">   34 </span>                <span style="color:#000000">{</span>
+<span style="color:#2b91af">   35 </span>                    <span style="color:#000000">printf</span><span style="color:#000000">(</span><span style="color:#a31515">&quot;</span><span style="color:#a31515">%d</span><span style="color:#a31515">,</span><span style="color:#a31515">\x20</span><span style="color:#a31515">&quot;</span><span style="color:#000000">,</span> arr<span style="color:#000000">[</span>i<span style="color:#000000">]);</span>
+<span style="color:#2b91af">   36 </span>                <span style="color:#000000">}</span>
+<span style="color:#2b91af">   37 </span>        <span style="color:#000000">}</span>
+<span style="color:#2b91af">   38 </span>    <span style="color:#0000ff">return</span> <span style="color:#000000">0</span><span style="color:#000000">;</span>
+<span style="color:#2b91af">   39 </span><span style="color:#000000">}</span>
+</pre>
+</body>
+</html>
+<!--HTML generated by highlight 3.59, http://www.andre-simon.de/-->
